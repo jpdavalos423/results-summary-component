@@ -10,3 +10,41 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: seagreen;
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+  height: 300px;
+}
+
+.result-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.summary-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
