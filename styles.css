@@ -72,7 +72,7 @@ body {
 }
 
 .result-card p {
-  color: hsl(241, 100%, 89%, 0.8);
+  color: hsla(241, 100%, 89%, 0.8);
 }
 
 .summary-card {
@@ -81,15 +81,33 @@ body {
   border-radius: 50px;
   padding: 50px;
   width: 50%;
+  /* display: flex;
+  flex-direction: column; */
+  /* text-align: center;
+  justify-content: space-between; */
+}
+
+.stats * {
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  align-items: center;
   justify-content: space-between;
 }
 
-/* .stats {
-  
-} */
+.stats div div:nth-of-type(2) {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.stats span {
+  color: hsl(224, 30%, 27%);
+}
+
+.stats em {
+  font-style: normal;
+}
+
+.stat-label p {
+  margin-left: 10px;
+}
 
 .reaction-stat {
   color: hsl(0, 100%, 67%);
@@ -109,10 +127,4 @@ body {
 .visual-stat {
   color: hsl(241, 81%, 54%);
   background-color: hsla(234, 85%, 45%, 0.1);
-}
-
-.stats {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
