@@ -82,15 +82,32 @@ body {
   padding: 50px;
   width: 50%;
   /* display: flex;
-  flex-direction: column; */
-  /* text-align: center;
+  flex-direction: column;
+  text-align: center;
   justify-content: space-between; */
 }
+
+.summary-card h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+} */
 
 .stats * {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.stats div {
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .stats div div:nth-of-type(2) {
@@ -127,4 +144,14 @@ body {
 .visual-stat {
   color: hsl(241, 81%, 54%);
   background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.summary-card button {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  border: none;
+  width: 100%;
+  border-radius: 360px;
+  padding: 10px 0;
 }
