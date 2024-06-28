@@ -121,10 +121,7 @@ body {
 
 .stats span {
   color: hsl(224, 30%, 27%);
-}
-
-.stats em {
-  font-style: normal;
+  font-weight: 700;
 }
 
 .stat-label p {
@@ -151,7 +148,7 @@ body {
   background-color: hsla(234, 85%, 45%, 0.05);
 }
 
-.summary-card button {
+.summary-card .btn {
   background-color: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
   text-align: center;
@@ -159,8 +156,34 @@ body {
   width: 100%;
   border-radius: 360px;
   padding: 15px 0;
+
+  transition: 0.2s ease-in-out;
+}
+
+.summary-card .btn:hover {
+  background-color: hsl(241, 81%, 54%);
+  cursor: pointer;
 }
 
 .attribution {
   margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    height: 1000px;
+    max-width: 375px;
+  }
+
+  .result-card {
+    border-radius: 0 0 25px 25px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .summary-card {
+    padding: 20px;
+    width: 100%;
+  }
 }
