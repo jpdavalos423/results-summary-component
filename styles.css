@@ -170,9 +170,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* body {
-    align-items: stretch;
-  } */
+  body {
+    justify-content: flex-start;
+  }
 
   .card {
     flex-direction: column;
@@ -183,14 +183,12 @@ body {
   .result-card {
     border-radius: 0 0 35px 35px;
     padding: 20px;
-    /* width: 335px; */
     width: calc(100% - 40px);
   }
 
   .summary-card {
     border-radius: 0;
     padding: 20px;
-    /* width: 335px; */
     width: calc(100% - 40px);
   }
 
