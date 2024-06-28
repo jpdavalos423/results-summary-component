@@ -170,20 +170,40 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* body {
+    align-items: stretch;
+  } */
+
   .card {
     flex-direction: column;
-    height: 1000px;
+    height: 100%;
     max-width: 375px;
   }
 
   .result-card {
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 35px 35px;
     padding: 20px;
-    width: 100%;
+    /* width: 335px; */
+    width: calc(100% - 40px);
   }
 
   .summary-card {
+    border-radius: 0;
     padding: 20px;
-    width: 100%;
+    /* width: 335px; */
+    width: calc(100% - 40px);
+  }
+
+  .score {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .score em {
+    font-size: 55px;
+  }
+
+  .result-card p {
+    margin: 15px;
   }
 }
